@@ -12,7 +12,7 @@ import {Link as ReactLink} from "react-router";
 function Home() {
   return (
     <Flex justify="center" align="center" width="100%" height="100vh" className="bg-gradient" direction="column">
-      <Grid columns="2" gap="9"  maxWidth="60vw" justify="center">
+      <Grid columns={{ initial: "1", md: "2" }} gap={{ initial: "4", md: "9" }}  maxWidth={{ initial: "80vw", md: "60vw" }} justify="center">
         <ReactLink to="/harmony" className="link">
           <Card size="3" className="card">
             <Flex justify="center" direction="column" gap="6">
